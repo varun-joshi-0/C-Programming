@@ -4,15 +4,15 @@
 int main()
 {
 
-    float n, i;
+    float n, i, j = 3;
     float sum = 1;
     printf("Enter the Limit: ");
     scanf("%f", &n);
 
-    for (i = 3; i < n;)
+    for (i = 0; i < n - 1; i++)
     {
-        sum = sum + (i / (i + 1));
-        i = i + 2;
+        sum = sum + (j / (j + 1));
+        j = j + 2;
     }
 
     printf("%f", sum);
