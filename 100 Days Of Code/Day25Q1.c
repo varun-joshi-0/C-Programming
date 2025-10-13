@@ -8,10 +8,12 @@
 #include <stdio.h>
 
 int main() {
-    int rows = 5;
+    int n;
+    printf("Enter the Number: ");
+    scanf("%d",&n);
 
-    for (int i = 0; i < rows; i++) {
-        for (int j = rows - i; j <= 5; j++) {
+    for (int i = 0; i < n ; i++) {
+        for (int j = n - i; j <= 5; j++) {
             printf("%d", j);
         }
         printf("\n");
